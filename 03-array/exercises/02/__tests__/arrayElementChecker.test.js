@@ -9,8 +9,8 @@ describe('arrayElementChecker() ', () => {
     const expected = {
       exists: true,
       index: 0,
-      allElementsAreNumber: true,
-      someElementsAreNumber: true,
+      allElementsAreNumbers: true,
+      someElementsAreNumbers: true,
     };
 
     expect(result).toEqual(expected);
