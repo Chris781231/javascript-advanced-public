@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-    </head>
+  <body>
+    <script>
+      // ASYNC AWAIT
 
-    <body>
-        <script>
-            // PROMISE
-            function addOnTo(number) {
-                let result = number + 1;
-                return new Promise((resolve, reject) => {
-                    resolve(result);
-                });
-            }
+      function addOnTo(number) {
+        let result = number + 1
+        return new Promise((resolve, reject) => {
+          resolve(result)
+        })
+      }
 
-            async function main() {
-                const res1 = await addOnTo(5);
-                const res2 = await addOnTo(res1);
-                const res3 = await addOnTo(res2);
-                const res4 = await addOnTo(res3);
-                const res5 = await addOnTo(res4);
-                console.log(res5);
-            }
+      async function main() {
+        const res1 = await addOnTo(5)
+        const res2 = await addOnTo(res1)
+        const res3 = await addOnTo(res2)
+        const res4 = await addOnTo(res3)
+        const res5 = await addOnTo(res4)
+        console.log(res5)
+      }
 
-            main();
-
-        </script>
-    </body>
-
+      main()
+    </script>
+  </body>
 </html>

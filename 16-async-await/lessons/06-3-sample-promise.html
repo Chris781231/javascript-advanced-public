@@ -1,43 +1,31 @@
 <!DOCTYPE html>
 <html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-    </head>
+  <body>
+    <script>
+      // PROMISE
 
-    <body>
-        <script>
-            // PROMISE
+      function addOneTo(number) {
+        let result = number + 1
+        return new Promise((resolve, reject) => {
+          setTimeout(() => resolve(result), 1000)
+        })
+      }
 
-            function addOneTo(number) {
-                let result = number + 1;
-                return new Promise((resolve, reject) => {
-                    setTimeout(() =>
-                        resolve(result), 1000)
-                })
-            }
-
-            addOneTo(5)
-                .then(res1 =>
-                    addOneTo(res1)
-                )
-                .then(res2 =>
-                    addOneTo(res2)
-                )
-                .then(res3 =>
-                    addOneTo(res3)
-                )
-                .then(res4 =>
-                    addOneTo(res4)
-                )
-                .then(res5 => {
-                    console.log(res5);
-                });
-
-        </script>
-    </body>
-
+      addOneTo(5)
+        .then((res1) => addOneTo(res1))
+        .then((res2) => addOneTo(res2))
+        .then((res3) => addOneTo(res3))
+        .then((res4) => addOneTo(res4))
+        .then((res5) => {
+          console.log(res5)
+        })
+    </script>
+  </body>
 </html>
