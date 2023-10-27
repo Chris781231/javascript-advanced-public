@@ -16,7 +16,7 @@ A feladatok 4 csoportra vannak osztva nehézségi szint szerint:
 Írj egy-egy függvényt a megadott néven, amely az alábbi algoritmusokat valósítja meg!  
 A paraméterként átadott tömb minden esetben szekvenciális, hacsak a feladat másként nem írja!  
 A `sort()` metódust és a `Math` object metódusait nem használhatod, hacsak a feladat másként nem írja!  
-Amikor végeztél, push-old fel a megoldásod!
+
 
 ## Tesztelés
 
