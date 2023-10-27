@@ -3,10 +3,50 @@
 ## A tananyag felépítése:
 
 - `00-20` modul mappák:
-  - `README.md` fájl: az adott modul szöveges összefoglalója
+  - `README.md` fájl: az adott modul szöveges összefoglalója (nem érhető el még az alábbi moduloknál: `11-regex`, `12-error-handling`, `14-async-programming`, `16-async-await`, `17-this`, `18-objects`)
   - `lessons` mappa: a videós leckék kódjai
-  - `exercises` mappa: feladatok automata tesztekkel
-  - `project` mappa: mini projekt feladatok
+  - `exercises` mappa: feladatok automata tesztekkel (nem minden mondulnál érhető el)
+  - `project` mappa: mini projekt feladatok (nem minden mondulnál érhető el)
+
+## Előkészületek
+
+1. Telepítsd a NodeJS-t (válaszd az LTS verziót): [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+2. Telepítsd az `ESLint` extensiont VS Code alá
+3. Add ki az `npm i` parancsot
+
+## Feladatok
+
+Az feladatok `exercises` mappákban találhatóak modulonként.
+A feladatok 4 csoportra vannak osztva nehézségi szint szerint:
+
+- A feladatok megoldása során a `start` mappában kell dolgoznod minden esetben! - A kiinduló fájlok előre el vannak készítve.
+- A fájlok végén az `export`, `export default` kulcsszavakkal találkozhatsz, ezeket hagyd módosítatlanul, a kódod ezek **FELETT** kell megírnod!
+- A megadott HTML-fájlba nem kell írnod semmit, csak a JS-fájlokban dolgozz!
+- A HTML-fájlok csak arra szolgálnak, hogy böngészőben is meg tudd tekinteni a megoldásod.
+
+## Tesztelés
+
+A feladatokhoz automata tesztek tartoznak.
+Bármikor tesztelheted a függvényeidet az alábbi parancsok segítségével.
+
+- `npm run test:bas`
+- `npm run test:int`
+- `npm run test:adv`
+- `npm run test:exp`
+- `npm run test:functions`
+- `npm run test:array`
+- `npm run test:string`
+- `npm run test:number`
+- `npm run test:destructuring`
+- `npm run test:date`
+- `npm run test:other`
+- `npm run test:storage`
+- `npm run test:regex`
+- `npm run test:promise`
+- `npm run test:generators`
+- `npm run test:objects`
+
+Az első négy a `00-algorithm` gyakorló modulhoz tartozó 4 nehézségi szintű feladatsort teszteli le a többi parancs értelemszerűen az adott modulok feladatait.
 
 ## Leckék
 
