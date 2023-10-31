@@ -3,7 +3,7 @@
 ## A tananyag felépítése:
 
 - `00-20` modul mappák:
-  - `README.md` fájl: az adott modul szöveges összefoglalója (nem érhető el még az alábbi moduloknál: `11-regex`, `12-error-handling`, `14-async-programming`, `16-async-await`, `17-this`, `18-objects`)
+  - `README.md` fájl: az adott modul szöveges összefoglalója
   - `lessons` mappa: a videós leckék kódjai
   - `exercises` mappa: feladatok automata tesztekkel (nem minden mondulnál érhető el)
   - `project` mappa: mini projekt feladatok (nem minden mondulnál érhető el)
