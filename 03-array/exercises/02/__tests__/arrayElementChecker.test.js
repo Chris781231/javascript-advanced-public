@@ -24,8 +24,8 @@ describe('arrayElementChecker() ', () => {
     const expected = {
       exists: false,
       index: -1,
-      allElementsAreNumber: false,
-      someElementsAreNumber: false,
+      allElementsAreNumbers: false,
+      someElementsAreNumbers: false,
     };
 
     expect(result).toEqual(expected);
