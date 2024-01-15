@@ -4,7 +4,8 @@ const user = {
 };
 
 // your code
-
+const defaultvalue = 'unknown';
+const { firstName = defaultvalue, lastName = defaultvalue, job = defaultvalue } = user;
 
 export {
   firstName,

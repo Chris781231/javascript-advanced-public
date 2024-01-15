@@ -3,6 +3,8 @@ const user = {
   lastName: 'Doe',
 };
 
-// your code 
+// your code
+const defaultValue = 'unknown';
+const { firstName: f = defaultValue, lastName: l = defaultValue, job: j = defaultValue } = user;
 
 export { l, f, j };
