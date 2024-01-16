@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="hu">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Object converter</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Object converter</title>
+</head>
 
-  <body>
-    <script type="module">
-      import objectConverter from "./js/objectConverter.js";
+<body>
+  <script type="module">
+    import objectConverter from "./js/objectConverter.js";
 
-      const arr = ['első', 'második', 'harmadik']
+    const arr = ['első', 'második', 'harmadik']
 
-      const set = new Set()
-      set.add('első')
-      set.add('második')
-      set.add('harmadik')
+    const set = new Set()
+    set.add('első')
+    set.add('második')
+    set.add('harmadik')
 
-      const map = new Map()
-      map.set(0, 'első')
-      map.set(1, 'második')
-      map.set(2, 'harmadik')
+    const map = new Map()
+    map.set(0, 'első')
+    map.set(1, 'második')
+    map.set(2, 'harmadik')
 
-      console.log('Set to Array', objectConverter.setToArray(set));
-      console.log('Map to Array', objectConverter.mapToArray(map));
-      console.log('Set to Map', objectConverter.setToMap(set));
-      console.log('Array to Map', objectConverter.arrayToMap(arr));
-      console.log('Map to Set', objectConverter.mapToSet(map));
-      console.log('Array to Set', objectConverter.arrayToSet(arr));
-    </script>
-  </body>
+    console.log('Array to Map', objectConverter.arrayToMap(arr));
+    console.log('Array to Set', objectConverter.arrayToSet(arr));
+    console.log('Set to Map', objectConverter.setToMap(set));
+    console.log('Set to Array', objectConverter.setToArray(set));
+    console.log('Map to Array', objectConverter.mapToArray(map));
+    console.log('Map to Set', objectConverter.mapToSet(map));
+  </script>
+</body>
 
 </html>
