@@ -128,4 +128,3 @@ const blackBackground = () => {
 
 descriptionElement.addEventListener('click', blackBackground);
 // descriptionElement.removeEventListener('click', blackBackground);
-
