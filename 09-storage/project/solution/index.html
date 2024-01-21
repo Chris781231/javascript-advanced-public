@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="todo-list">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-light mt-2 mb-5">
+                        <strong>
+                            <center>Daily To-Do list manager</center>
+                        </strong>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-light px-4 position-relative">
+            <div class="row">
+                <div class="col">
+                    <p id="dayName" class="text-danger fs-5 mt-5 mb-0">Thursday</p>
+                    <p id="date" class="text-danger fs-5 ">05-31-2018</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-9">
+                    <input id="newTodoInput" class="w-100 fs-4 p-2 border border-dark-subtle rounded" type="text"
+                        placeholder="Take the garbage out">
+                </div>
+                <div class="col">
+                    <button id="newTodoBtn" type="button" class="btn btn-secondary w-100 h-100 py-0 fs-1">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div id="noTask" class="text-center mt-5">
+                    <img class="mb-3" src="./images/like.png" alt="like" width="50">
+                    <p class="text-black" style="--bs-text-opacity: .5;"><strong>
+                            Time to chill! You have no todos.</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="pending">
+                    <div id="pendingCount"></div>
+                    <div id="pendingTodos"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="completed" class="d-none">
+                    <div id="completedPercent"></div>
+                    <div id="completedTodos"></div>
+                </div>
+
+            </div>
+
+            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <p class=""><strong>
+                        <span id="complete" class="me-4">Show Completed</span>
+                        <span id="clearAll">Clear All</span>
+                    </strong></p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

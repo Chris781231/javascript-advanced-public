@@ -1,0 +1,16 @@
+body {
+    background-color: coral;
+}
+
+input {
+    font-style: italic;
+}
+
+.todo-list {
+    margin: auto;
+    max-width: 500px;
+}
+.todo-list > .container:last-child {
+    border: 1px solid grey;
+    min-height: 600px;
+}
