@@ -1,5 +1,5 @@
-/* eslint-disable indent */
 /* eslint-disable linebreak-style */
+/* eslint-disable indent */
 /* eslint-disable no-use-before-define */
 const topLayer = document.querySelector('#top-layer');
 const descriptionElement = document.querySelector('#description');
