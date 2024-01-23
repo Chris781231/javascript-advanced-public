@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { state, actions } from './store/ajaxRequest.js';
 
 /**
@@ -24,22 +25,38 @@ function ajaxRequest({
    * @param {string} message - the error message
    */
   function handleError(message) {
-
+    throw new Error(message);
   }
 
   /**
    * Handle ajax onload event
    * @param {Object} xhr - the error message
    */
-  function handleLoad(xhr) {
-
+  function handleLoad(response) {
+    console.log(response.responseText);
+    // successCallback(response.responseText);
   }
 
   /**
    * Send ajax request
    */
   function request() {
+    const xhr = new XMLHttpRequest();
+    xhr.timeout = state.delay;
+    xhr.onerror = () => {
+      handleError(Error.message);
+    };
+    xhr.onloadend = () => {
+      if (xhr.status === 404) {
+        handleError(new Error(`Resource not available: ${url}`));
+      }
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        handleLoad(xhr);
+      }
+    };
 
+    xhr.open(method, url);
+    xhr.send();
   }
 
   return request;

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /**
  * The state of request
  * @constant
