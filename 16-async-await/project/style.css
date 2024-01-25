@@ -1,0 +1,71 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main {
+    background-image: url(./assets/site/mapblue.jpg);
+    background-position: top right;
+    background-size: 100%;
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(8, 1fr);
+    gap: 15px 30px;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+}
+
+.portrait {
+    width: 55%;
+}
+
+.caption {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: -5px;
+}
+
+.aside {
+    background-color: #444;
+    padding-left: 20px;
+    padding-right: 10px;
+    max-width: 300px;
+    text-align: center;
+    width: 20%;
+}
+
+.aside .title {
+    width: 80%;
+}
+
+.char-details {
+    text-align: left;
+}
+
+.pic {
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+.char-details span {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.house {
+    float: right;
+    margin-left: 3px;
+    margin-top: -20px;
+    width: 25px;
+}
+
+.bio {
+    color: white;
+    font-size: 0.8rem;
+}
